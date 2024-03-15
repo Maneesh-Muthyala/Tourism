@@ -1,0 +1,626 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+@media(max-width:767px) {
+    .logo {
+        width: 140px;
+        height: 80px;
+    }
+
+    .banner-header {
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 26px;
+        font-weight: normal;
+    }
+
+    #icon {
+        height: auto;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navItem {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+
+
+    .banner-section-bg-container {
+        background-image: url("https://res.cloudinary.com/dvmcsww2y/image/upload/v1710440612/hallstatt-3609863_qtnniv.jpg");
+        height: 92vh;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2px;
+    }
+
+    .sub-header {
+        font-family: "Roboto";
+        font-size: 30px;
+
+    }
+
+    .banner-caption {
+        color: #f5f7fa;
+        font-family: "Roboto";
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+
+    .custom-button {
+        color: white;
+        background-image: linear-gradient(#d0b200, #a58d00);
+        width: 130px;
+        height: 45px;
+        border-width: 0;
+        border-radius: 8px;
+        margin-right: 10px;
+    }
+
+    .pack-header {
+        font-family: "Roboto";
+        font-size: 45px;
+        font-weight: bold;
+    }
+
+    .cont {
+        height: 100vh;
+    }
+
+    .holiday-card {
+        font-size: 20px;
+        font-family: "Roboto";
+    }
+
+    .card {
+        display: none;
+    }
+
+    .anckoritem {
+        text-decoration: none;
+        color: #594d6d;
+        font-family: "Open Sans";
+        padding: 12px;
+        padding-left: 20px;
+    }
+
+    .pack-card {
+        border-radius: 16px;
+        margin: 10px;
+        background-color: #f0f0f0;
+        margin-bottom: 10px;
+        padding: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        margin-right: 20px;
+    }
+
+    .pack-image {
+        border-radius: 16px;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .list-item {
+        font-family: "Roboto";
+        font-size: 25px;
+        color: #a6a4a1;
+        margin-bottom: 5px;
+        font-weight: normal;
+    }
+
+    .custom-outline-button {
+        color: #d0b200;
+        background-color: transparent;
+        width: 130px;
+        height: 45px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #d0b200;
+        border-radius: 8px;
+    }
+
+    .tropical-cont {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 500px;
+        width: auto;
+        margin: 10px;
+        margin-bottom: 20px;
+        padding-right: 10px;
+        overflow: scroll;
+    }
+
+    .tropical-cont::-webkit-scrollbar {
+        display: none;
+    }
+
+    .mvie-card {
+        margin-right: 20px;
+        padding: 10px;
+    }
+
+    .form-control {
+        width: 320px;
+        height: 40px;
+        margin: 10px;
+        border-radius: 4px;
+
+    }
+
+    .pic {
+        width: 260px;
+        height: 170px;
+    }
+
+    .bt-cont {
+        background-color: #f5f3ed;
+        margin-top: -14px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 260px;
+        padding: 10px;
+    }
+
+    .bt-txt {
+        font-family: roboto;
+        font-size: 15px;
+    }
+
+    .bt-para {
+        font-family: roboto;
+        font-size: 20px;
+    }
+
+    .flite-card {
+        margin-right: 10px;
+        padding: 10px;
+    }
+
+    .flite-main {
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+    }
+
+    .flite-main::-webkit-scrollbar {
+        display: none;
+    }
+
+    .bt-head {
+        font-family: roboto;
+        font-size: 20px;
+    }
+}
+
+
+@media(min-width:767px) and (max-width:991px) {
+    .logo {
+        width: 140px;
+        height: 80px;
+    }
+
+    .banner-header {
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 26px;
+        font-weight: normal;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navItem {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+
+
+    .banner-section-bg-container {
+        background-image: url("https://res.cloudinary.com/dvmcsww2y/image/upload/v1710440612/hallstatt-3609863_qtnniv.jpg");
+        height: 92vh;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2px;
+    }
+
+    .sub-header {
+        font-family: "Roboto";
+        font-size: 30px;
+
+    }
+
+    .banner-caption {
+        color: #f5f7fa;
+        font-family: "Roboto";
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+
+    .custom-button {
+        color: white;
+        background-image: linear-gradient(#d0b200, #a58d00);
+        width: 130px;
+        height: 45px;
+        border-width: 0;
+        border-radius: 8px;
+        margin-right: 10px;
+    }
+
+    .pack-header {
+        font-family: "Roboto";
+        font-size: 45px;
+        font-weight: bold;
+    }
+
+    .cont {
+        height: 100vh;
+    }
+
+    .holiday-card {
+        font-size: 20px;
+        font-family: "Roboto";
+    }
+
+    .card {
+        display: none;
+    }
+
+
+    .anckoritem {
+        text-decoration: none;
+        color: #594d6d;
+        font-family: "Open Sans";
+        padding: 12px;
+        padding-left: 20px;
+    }
+
+    .pack-card {
+        border-radius: 16px;
+        margin: 10px;
+        background-color: #f0f0f0;
+        margin-bottom: 10px;
+        padding: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        margin-right: 20px;
+    }
+
+    .pack-image {
+        border-radius: 16px;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .list-item {
+        font-family: "Roboto";
+        font-size: 25px;
+        color: #a6a4a1;
+        margin-bottom: 5px;
+        font-weight: normal;
+    }
+
+    .custom-outline-button {
+        color: #d0b200;
+        background-color: transparent;
+        width: 130px;
+        height: 45px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #d0b200;
+        border-radius: 8px;
+    }
+
+    .tropical-cont {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 500px;
+        width: auto;
+        margin: 10px;
+        margin-bottom: 20px;
+        padding-right: 10px;
+        overflow: scroll;
+    }
+
+    .tropical-cont::-webkit-scrollbar {
+        display: none;
+    }
+
+    .form-control {
+        width: 320px;
+        height: 40px;
+        margin: 10px;
+        border-radius: 4px;
+
+    }
+
+    .pic {
+        width: 260px;
+        height: 170px;
+    }
+
+    .bt-cont {
+        background-color: #f5f3ed;
+        margin-top: -14px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 260px;
+        padding: 10px;
+    }
+
+    .bt-txt {
+        font-family: roboto;
+        font-size: 15px;
+    }
+
+    .bt-para {
+        font-family: roboto;
+        font-size: 20px;
+    }
+
+    .flite-card {
+        margin-right: 10px;
+        padding: 10px;
+    }
+
+    .flite-main {
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+    }
+
+    .flite-main::-webkit-scrollbar {
+        display: none;
+    }
+
+    .bt-head {
+        font-family: roboto;
+        font-size: 20px;
+    }
+}
+
+@media(min-width:992px) {
+    .logo {
+        width: 140px;
+        height: 80px;
+    }
+
+    #icon {
+        display: none;
+    }
+
+    #card {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: row;
+    }
+
+    .banner-header {
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 26px;
+        font-weight: normal;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navItem {
+        display: none;
+    }
+
+
+
+    .banner-section-bg-container {
+        background-image: url("https://res.cloudinary.com/dvmcsww2y/image/upload/v1710440612/hallstatt-3609863_qtnniv.jpg");
+        height: 92vh;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2px;
+    }
+
+    .sub-header {
+        font-family: "Roboto";
+        font-size: 30px;
+
+    }
+
+    .banner-caption {
+        color: #f5f7fa;
+        font-family: "Roboto";
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+
+    .custom-button {
+        color: white;
+        background-image: linear-gradient(#d0b200, #a58d00);
+        width: 130px;
+        height: 45px;
+        border-width: 0;
+        border-radius: 8px;
+        margin-right: 10px;
+    }
+
+    .pack-header {
+        font-family: "Roboto";
+        font-size: 45px;
+        font-weight: bold;
+    }
+
+    .cont {
+        height: 100vh;
+    }
+
+    .holiday-card {
+        font-size: 20px;
+        font-family: "Roboto";
+    }
+
+
+    .anckoritem {
+        text-decoration: none;
+        color: #594d6d;
+        font-family: "Open Sans";
+        padding: 12px;
+        padding-left: 20px;
+    }
+
+    .pack-card {
+        border-radius: 16px;
+        margin: 10px;
+        background-color: #f0f0f0;
+        margin-bottom: 10px;
+        padding: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        margin-right: 20px;
+        min-width: 200px;
+        max-width: 420px;
+    }
+
+    .pack-image {
+        border-radius: 16px;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .list-item {
+        font-family: "Roboto";
+        font-size: 25px;
+        color: #a6a4a1;
+        margin-bottom: 5px;
+        font-weight: normal;
+    }
+
+    .custom-outline-button {
+        color: #d0b200;
+        background-color: transparent;
+        width: 130px;
+        height: 45px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #d0b200;
+        border-radius: 8px;
+    }
+
+    .tropical-cont {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .form-control {
+        width: 320px;
+        height: 40px;
+        margin: 10px;
+        border-radius: 4px;
+
+    }
+
+    .pic {
+        width: 260px;
+        height: 170px;
+    }
+
+    .bt-cont {
+        background-color: #f5f3ed;
+        margin-top: -14px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 260px;
+        padding: 10px;
+    }
+
+    .bt-txt {
+        font-family: roboto;
+        font-size: 15px;
+    }
+
+    .bt-para {
+        font-family: roboto;
+        font-size: 20px;
+    }
+
+    .flite-card {
+        margin-right: 10px;
+        padding: 10px;
+    }
+
+    .flite-main {
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+    }
+
+    .flite-main::-webkit-scrollbar {
+        display: none;
+    }
+
+    .bt-head {
+        font-family: roboto;
+        font-size: 20px;
+    }
+}
